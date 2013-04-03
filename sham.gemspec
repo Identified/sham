@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{lib, app}/**/*"]
 
-  s.add_dependency "rails"
+  s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "sass"
   s.add_dependency "compass"
 end
