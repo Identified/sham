@@ -1,3 +1,4 @@
-class Sham
+require "sham/engine"
 
+module Sham
 end
