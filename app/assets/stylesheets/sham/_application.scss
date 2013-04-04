@@ -1,5 +1,5 @@
 @import "variables";
 
 @if $import-reset {
-  @import "reset";
+  @include reset;
 }
