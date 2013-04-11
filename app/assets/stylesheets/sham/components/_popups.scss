@@ -3,36 +3,37 @@
 // Description : Mixins for popups
 //
 // Mixins to include:
-//    @include popup ($background-color, $text-color, $border-color);
-//    @include small-popup ( $background-color, $border-color );
+//    @include sham-popup ($background-color, $text-color, $border-color);
+//    @include sham-popup-small ( $background-color, $border-color );
 //
 //
 //
 // ============================================================================
 
+// default values
+$sham-popup-background-color: #f7f7ec !default;
+$sham-popup-border-color: #e2e2d7 !default;
+$sham-popup-text-color: $dark-text-color !default;
 
-@mixin popup($background:#f7f7ec, $text:$dark-text-color, $border:#e2e2d7) {
-  .popup {
-    background-color : $background;
-    bottom           : auto;
-    color            : $text;
-    left             : 201px;
-    padding          : 14px;
-    position         : absolute;
-    top              : 0;
-    min-width        : 240px;
-    z-index          : 8;
-    border:3px $border solid;
-  }
+@mixin sham-popup($background: $sham-popup-background-color, $text: $sham-popup-text-color, $border: $sham-popup-border-color) {
+  background-color : $background;
+  bottom           : auto;
+  color            : $text;
+  left             : 201px;
+  padding          : 14px;
+  position         : absolute;
+  top              : 0;
+  min-width        : 240px;
+  z-index          : 8;
+  border           : 3px $border solid;
 }
 
-@mixin popup-small($background: #f7f7ec, $border: #e2e2d7){
+@mixin sham-popup-small($background: $sham-popup-background-color, $text: $sham-popup-text-color, $border: $sham-popup-border-color){
   background-color : $background;
-  display: block;
-  padding: 14px;
-  position: absolute;
-  top: 0;
-  color: $dark-text-color;
-  border:3px $border solid;
-
+  display          : block;
+  padding          : 14px;
+  position         : absolute;
+  top              : 0;
+  color            : $text;
+  border           : 3px $border solid;
 }
