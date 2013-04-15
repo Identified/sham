@@ -3,4 +3,5 @@
 @if $import-reset {
   @include reset;
 }
-@import "components/popups"
+@import "components/popups";
+@import "components/modals";
