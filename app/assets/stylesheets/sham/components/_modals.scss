@@ -1,0 +1,62 @@
+// ============================================================================
+// File : modals.scss
+// Description : Mixins for modals
+//
+// Mixins to include:
+//    @include sham-modal( $background-color );
+//    @include sham-modal-content($background-color, $border-color);
+//    @include sham-modal-close-button;
+//
+//
+// ============================================================================
+
+// default values
+$sham-modal-container-background-color: rgba(243, 243, 236, 0.75);
+$sham-modal-content-background-color: #ffffff;
+$sham-modal-content-border-color: #DBDBCD;
+
+
+@mixin sham-modal-container( $background : $sham-modal-container-background-color){
+  background-color            : $background;
+  display                     : none;
+  font-size                   : $dialog-font-size;
+  left                        : 0;
+  position                    : absolute;
+  top                         : 0;
+  z-index                     : 10;
+
+}
+
+@mixin sham-modal-content( $background : $sham-modal-content-border-color, $border : $sham-modal-content-border-color){
+  background: $background;
+  border: 4px $border solid;
+  color: $dark-text-color;
+  font-size: 14px;
+  margin-top: 0;
+  max-height: 600px;
+  overflow: auto;
+  position: fixed;
+  top: 100px;
+  padding: 20px;
+
+}
+
+@mixin sham-modal-close-button{
+  padding-left: 15px;
+  padding-top: 4px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  a {
+    background-size           : 14px;
+    cursor                    : pointer;
+    display                   : block;
+    height                    : 18px;
+    text-indent               : -10000px;
+    width                     : 18px;
+  }
+  a:hover {
+    opacity: .9;
+  }
+
+}
