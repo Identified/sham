@@ -1,0 +1,62 @@
+// ============================================================================
+// File : buttons.scss
+// Description : Mixins for buttons
+//
+// Mixins to include:
+//    @include sham-modal( $background-color );
+//    @include sham-modal-content($background-color, $border-color);
+//    @include sham-modal-close-button;
+//
+//
+// ============================================================================
+
+//default values
+$sham-button-background-color : #e96c66;
+$sham-button-color: #ffffff;
+$sham-button-hover-background-color: #a3b57b;
+
+@mixin sham-button($background : $sham-button-background-color, $hover: $sham-button-hover-background-color, $color: $sham-button-color ){
+  background-color : $background;
+  border           : none;
+  color            : $color;
+  cursor           : pointer;
+  display          : -moz-inline-stack;  /* optional */
+  display          : inline-block;
+  font-size        : 13px;
+  height           : 48px;
+  line-height      : 48px;
+  margin-left      : auto;
+  margin-right     : auto;
+  padding          : 0 20px;
+  text-transform   : uppercase;
+  width            : auto;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+  -webkit-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+  -moz-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
+
+
+  &:hover {
+    background-color : $hover;
+    cursor: pointer;
+
+  }
+  .popup & {
+    height: 38px;
+    line-height: 38px;
+  }
+}
+
+
+
+@mixin sham-button-secondary {
+  @include sham-button($grey, #487081);
+
+  &:hover {
+    opacity: .9;
+
+  }
+  .popup & {
+    height: 38px;
+    line-height: 38px;
+  }
+}
