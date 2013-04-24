@@ -9,10 +9,13 @@
 }
 .sham-error {
   background-color: lighten ($red, 30%);
+  color: $red;
 }
 .sham-warning {
   background-color: lighten ($yellow, 30%);
+  color: $yellow;
 }
 .sham-success {
   background-color: lighten ($green, 30%);
+  color: $green;
 }
