@@ -1,0 +1,18 @@
+.sham-error, .sham-warning, .sham-success {
+  padding  : 1em;
+  position : absolute;
+  .sham-close {
+    position : relative;
+    top      : 0;
+    right    : 0;
+  }
+}
+.sham-error {
+  background-color: lighten ($red, 30%);
+}
+.sham-warning {
+  background-color: lighten ($yellow, 30%);
+}
+.sham-success {
+  background-color: lighten ($green, 30%);
+}
