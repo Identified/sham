@@ -1,4 +1,4 @@
-@import "variables";
+@import "settings";
 @import "reset";
 @if $import-reset {
   @include reset;
@@ -6,3 +6,4 @@
 @import "components/popups";
 @import "components/modals";
 @import "components/menus";
+@import "components/alerts";
