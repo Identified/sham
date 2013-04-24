@@ -1,11 +1,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "sham/version"
+require "sham-ui/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "sham-ui"
-  s.version     = Sham::VERSION
+  s.version     = ShamUi::VERSION
   s.authors     = ["Identified"]
   s.email       = ["chintan@identified.com", "dennis@identified.com", "kristy@identified.com", "michael@identified.com", "ram@identified.com"]
   s.homepage    = "http://www.identified.com"
@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "sass"
+  s.add_dependency "compass"
 end

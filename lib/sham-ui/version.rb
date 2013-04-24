@@ -1,3 +1,3 @@
-module Sham
+module ShamUi
   VERSION = "0.0.2"
 end
