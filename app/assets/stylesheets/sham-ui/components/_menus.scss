@@ -1,44 +1,19 @@
-// ============================================================================
-// File : menus.scss
-// Description : Mixins for menus
-//
-// Mixins to include:
-//    @include sham-menu-container( $color );
-//    @include sham-menu-row($border, $color, $background);
-//
-//
-//
-// ============================================================================
-
-// default values
-$sham-menu-color: #ffffff;
-$sham-menu-border-color: rgba(254,255,254,0.4);
-$sham-menu-background-color: rgba(255, 255, 255, 0.20);
-
-@mixin sham-menu-container($color : $sham-menu-color){
-  color                    : $color;
-  display                  : block;
-  height                   : auto;
-  left                     : 33px;
-  opacity                  : 1;
-  overflow                 : visible;
-  position                 : absolute;
-  z-index                  : 9;
-
-}
-
-@mixin sham-menu-row($border: $sham-menu-border-color, $color: $sham-menu-color, $background: $sham-menu-background-color){
-  border-bottom                : 1px $border solid;
-  clear                        : both;
-  color                        : $color;
-  cursor                       : pointer;
-  display                      : block;
-  padding                      : 14px 14px 14px 40px;
-  white-space                  : nowrap;
-  width                        : 200px;
-  background-position          : 10px center;
-  &:hover {
-    background-color           : $background;
-    cursor: pointer;
+@mixin sham-menu{
+  .sham-menu{
+    left                     : 0;
+    position                 : absolute;
+    z-index                  : 9;
+    .sham-menu-row{
+      border-bottom-style          : solid;
+      border-bottom-width          : 1px;
+      clear                        : both;
+      cursor                       : pointer;
+      padding                      : 1em;
+      white-space                  : nowrap;
+      width                        : 20em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
