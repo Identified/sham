@@ -13,15 +13,18 @@ $green          : green !default;
 $blanchedalmond : blanchedalmond !default;
 $white          : white !default;
 
+// ---- Button ----------------------------------------------------------------
+$sham-button-background-color : null !default;
+$sham-button-color            : null !default;
 
-// ---- Menu ----------------------------------------------------------------
+// ---- Menu ------------------------------------------------------------------
 
 $sham-menu-background-color  : null !default;
 $sham-menu-border-color      : null !default;
 $sham-menu-color             : null !default;
 
 
-// ---- Modal ----------------------------------------------------------------
+// ---- Modal -----------------------------------------------------------------
 
 $sham-modal-background-color            : null !default;
 $sham-modal-color                       : null !default;
@@ -29,7 +32,7 @@ $sham-modal-content-background-color    : null !default;
 $sham-modal-content-border-color        : null !default;
 
 
-// ---- Popup ----------------------------------------------------------------
+// ---- Popup -----------------------------------------------------------------
 
 $sham-popup-background-color  : null !default;
 $sham-popup-border-color      : null !default;
