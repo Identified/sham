@@ -1,9 +1,11 @@
 @mixin sham-popup{
   .sham-popup{
-    background-color : $white;
+    background-color : $sham-popup-background-color;
+    border-color     : $sham-popup-border-color;
     border-width     : 3px;
     border-style     : solid;
     bottom           : auto;
+    color            : $sham-popup-color;
     left             : 0;
     min-width        : 240px;
     padding          : 1em;

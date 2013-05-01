@@ -1,12 +1,16 @@
 @mixin sham-menu{
   .sham-menu{
+    background-color         : $sham-menu-background-color;
     left                     : 0;
     position                 : absolute;
     z-index                  : 9;
     .sham-menu-row{
+      background-color             : $sham-menu-background-color;
       border-bottom-style          : solid;
       border-bottom-width          : 1px;
+      border-color                 : $sham-menu-border-color;
       clear                        : both;
+      color                        : $sham-menu-color;
       cursor                       : pointer;
       padding                      : 1em;
       position                     : relative;
@@ -14,6 +18,7 @@
       width                        : 20em;
       &:hover {
         cursor: pointer;
+        @if $sham-menu-background-color != null { background-color: darken( $sham-menu-background-color, 10% ); }
       }
     }
   }
