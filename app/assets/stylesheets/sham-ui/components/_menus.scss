@@ -1,8 +1,7 @@
 @mixin sham-menu{
   .sham-menu{
     background-color         : $sham-menu-background-color;
-    left                     : 0;
-    position                 : absolute;
+    @include position(absolute);
     z-index                  : 9;
     .sham-menu-row{
       background-color             : $sham-menu-background-color;
@@ -13,7 +12,7 @@
       color                        : $sham-menu-color;
       cursor                       : pointer;
       padding                      : 1em;
-      position                     : relative;
+      @include position(relative);
       white-space                  : nowrap;
       width                        : 20em;
       &:hover {

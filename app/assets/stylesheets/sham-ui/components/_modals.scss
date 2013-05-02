@@ -1,9 +1,7 @@
 @mixin sham-modal {
   .sham-modal {
     background-color            : $sham-modal-background-color;
-    left                        : 0;
-    position                    : absolute;
-    top                         : 0;
+    @include position( absolute, 0px 0 0 0px );
     z-index                     : 10;
     .sham-modal-content {
       background         : $sham-modal-content-background-color;
@@ -15,16 +13,13 @@
       min-height         : 5em;
       min-width          : 5em;
       overflow           : auto;
-      position           : fixed;
-      top                : 0;
+      @include position( fixed, 0px 0 0 0);
       padding            : 1.5em;
     }
     .sham-modal-close-button{
       padding-left  : 15px;
       padding-top   : 4px;
-      position      : absolute;
-      right         : 10px;
-      top           : 6px;
+      @include position( absolute, 6px 10px 0 0);
       a {
         background-size           : 14px;
         cursor                    : pointer;

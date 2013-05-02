@@ -1,0 +1,25 @@
+@mixin sham-input {
+  #{$all-text-inputs}, textarea {
+    &.sham-input {
+      background-origin : border-box;
+      border            : 2px solid;
+      border-color      : $sham-input-text-border-color;
+      color             : $sham-input-text-color;
+      font-size         : $sham-input-text-font-size;
+      height            : $sham-input-text-height;
+      margin            : 8px 0px;
+      outline           : none;
+      padding           : $sham-input-text-padding;
+      width             : $sham-input-text-width;
+    }
+  }
+  .sham-input::-webkit-input-placeholder {
+    color: $sham-input-text-placeholder-color;
+  }
+  .sham-input:-moz-placeholder {
+    color: $sham-input-text-placeholder-color;
+  }
+  .sham-input:-ms-input-placeholder {
+    color: $sham-input-text-placeholder-color;
+  }
+}
