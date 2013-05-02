@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "sass"
   s.add_dependency "compass"
-  s.add_dependency "bourbon"
+  s.add_dependency "bourbon", "~> 3.1.6"
 end
