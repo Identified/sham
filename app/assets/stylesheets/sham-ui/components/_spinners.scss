@@ -1,0 +1,28 @@
+@mixin sham-loading-bar ($background-color:null, $foreground-color: null, $height: null, $width:null) {
+  &:before, &:after {
+    height: $height;
+    content: '';
+  }
+  &:before {
+    background-color: $background-color;
+    width: $width;
+  }
+  &:after {
+    background-color: $foreground-color;
+    height: $height;
+    animation: progress 1.5s linear infinite;
+    -moz-animation: progress 1.5s linear infinite;
+    -webkit-animation: progress 1.5s linear infinite;
+    -ms-animation: progress 1.5s linear infinite;
+    -o-animation: progress 1.5s linear infinite;
+  }
+}
+
+@mixin sham-spinner ($background:null, $content: '', $height: null, $width:null) {
+  background: $background;
+  content: $content;
+  display: block;
+  height: $height;
+  text-align: center;
+  width: $width;
+}
