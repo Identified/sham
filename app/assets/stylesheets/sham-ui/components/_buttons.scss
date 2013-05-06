@@ -12,10 +12,7 @@
     padding          : 0 1em;
     text-transform   : uppercase;
     width            : auto;
-    text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
-    -webkit-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
-    -moz-text-shadow: rgba(0,0,0,0.2) 0 1px 0;
-
+    @include prefixer( text-shadow,  rgba(0, 0, 0, 0.2) 0 1px 0, spec webkit moz);
 
     &:hover {
       @if $sham-button-background-color != null { background-color: darken( $sham-button-color, 10%); }
