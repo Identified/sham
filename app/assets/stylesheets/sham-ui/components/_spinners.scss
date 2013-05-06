@@ -10,11 +10,7 @@
   &:after {
     background-color: $foreground-color;
     height: $height;
-    animation: progress 1.5s linear infinite;
-    -moz-animation: progress 1.5s linear infinite;
-    -webkit-animation: progress 1.5s linear infinite;
-    -ms-animation: progress 1.5s linear infinite;
-    -o-animation: progress 1.5s linear infinite;
+    @include prefixer( animation, progress 1.5s linear infinite, spec moz webkit ms o);
   }
 }
 
