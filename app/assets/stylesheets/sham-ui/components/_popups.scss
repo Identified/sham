@@ -9,8 +9,7 @@
     left             : 0;
     min-width        : 240px;
     padding          : 1em;
-    position         : absolute;
-    top              : 0;
+    @include position( absolute, 0px 0 0 0);
     z-index          : 8;
   }
 }
