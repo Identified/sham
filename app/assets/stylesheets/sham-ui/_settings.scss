@@ -13,6 +13,8 @@ $green          : green !default;
 $blanchedalmond : blanchedalmond !default;
 $white          : white !default;
 
+$sham-base-text-color : #555 !default;
+
 // ---- Button ----------------------------------------------------------------
 $sham-button-background-color : null !default;
 $sham-button-color            : null !default;
@@ -45,3 +47,23 @@ $sham-modal-content-border-color        : null !default;
 $sham-popup-background-color  : null !default;
 $sham-popup-border-color      : null !default;
 $sham-popup-color             : null !default;
+
+
+// ---- Typography ------------------------------------------------------------
+
+$sham-use-typeplate         : true !default;
+$sham-use-core-typography   : true !default;
+$sham-beautify-fonts  : true !default;
+
+// Override with custom fonts only, attributes belong in mixins
+$sham-serif-font      : unquote ('Georgia') !default;
+$sham-sans-serif-font : unquote ('"Lucida Grande"') !default;
+$sham-monospace-font  : unquote ('Consolas') !default;
+$sham-title-font      : unquote ('Rockwell') !default;
+
+
+
+$sham-serif-fallback      : unquote ('Georgia, Times, "Times New Roman", serif;')!default;
+$sham-sans-serif-fallback : unquote ('"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif') !default;
+$sham-monospace-fallback  : unquote('Consolas, monaco, "Lucida Console", monospace') !default;
+$sham-title-fallback      : unquote('Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;') !default;
