@@ -1,5 +1,5 @@
-@mixin sham-input {
-  #{$all-text-inputs}, textarea {
+@if $use_sham_input == true {
+    #{$all-text-inputs}, textarea {
     &.sham-input {
       background-origin : border-box;
       border            : 2px solid;

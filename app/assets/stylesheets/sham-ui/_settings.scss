@@ -1,8 +1,43 @@
+// ---- Extensions ------------------------------------------------------------
+
+// Resets (choose one)
+$use_eric_meyer_reset   : false !default;
+$use_HTML5_doctor_reset : false !default;
+$use_normalize_reset    : false !default;
+
+// Alerts
+$use_sham_alert         : false !default;
+
+// Animation
+$use_animate_css        : false !default;
+
+// Buttons
+$use_sham_button        : true !default;
+
+// Forms
+$use_sham_input         : true !default;
+
+// Menus
+$use_sham_menu          : true !default;
+
+// Modals
+$use_sham_modal         : true !default;
+
+// Popups
+$use_sham_popup         : true !default;
+
+
+// Spinners
+$use_simple_spin        : true !default;
+
+// Typography
+$sham-use-typeplate     : true !default;
+
+
+
 // ---- Basics ----------------------------------------------------------------
 
 $base-em: 16px !default;
-
-$import-reset: true !default;
 
 
 // ---- Colors ----------------------------------------------------------------
@@ -51,8 +86,9 @@ $sham-popup-color             : null !default;
 
 // ---- Typography ------------------------------------------------------------
 
-$sham-use-typeplate         : true !default;
 $sham-use-core-typography   : true !default;
+
+
 $sham-beautify-fonts  : true !default;
 
 // Override with custom fonts only, attributes belong in mixins

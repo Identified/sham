@@ -1,4 +1,4 @@
-@mixin sham-menu{
+@if $use_sham_menu == true {
   .sham-menu{
     background-color         : $sham-menu-background-color;
     @include position(absolute);

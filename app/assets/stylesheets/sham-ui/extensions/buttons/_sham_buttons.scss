@@ -1,4 +1,4 @@
-@mixin sham-button {
+@if $use_sham_button == true {
   .sham-button {
     background-color : $sham-button-background-color;
     border           : none;
@@ -17,6 +17,6 @@
     &:hover {
       @if $sham-button-background-color != null { background-color: darken( $sham-button-color, 10%); }
       cursor: pointer;
-    }  
+    }
   }
 }

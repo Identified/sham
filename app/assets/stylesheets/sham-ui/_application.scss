@@ -1,14 +1,4 @@
 @import "settings";
-@import "reset";
-@if $import-reset {
-  @include reset;
-}
 @import "bourbon";
-@import "components/popups";
-@import "components/modals";
-@import "components/menus";
-@import "components/alerts";
-@import "components/buttons";
-@import "components/form_elements";
-@import "components/spinners";
-@import "index";
+@import "extensions/resets/*";
+@import "extensions/**/*";

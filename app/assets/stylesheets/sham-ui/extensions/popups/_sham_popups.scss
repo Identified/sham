@@ -1,0 +1,15 @@
+@if $use_sham_popup == true {
+  .sham-popup{
+    @include position( absolute, 0px 0 0 0);
+    bottom           : auto;
+    left             : 0;
+    z-index          : 8;
+    padding          : 1em;
+    min-width        : 240px;
+    border-width     : 3px;
+    border-style     : solid;
+    border-color     : $sham-popup-border-color;
+    background-color : $sham-popup-background-color;
+    color            : $sham-popup-color;
+  }
+}

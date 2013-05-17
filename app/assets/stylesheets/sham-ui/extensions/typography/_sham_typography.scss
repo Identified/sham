@@ -5,11 +5,14 @@
   }
 }
 
+// Create placeholders for core typography
+
 @if $sham-use-core-typography == 'true' {
+
   /* Optionally include detect_cleartype or simlar script in your poject if you want to disable custom fonts on browsers/OS's that render them poorly.
   https://gist.github.com/cbeier/283689 */
 
-  @mixin sham-sans-serif-font {
+  %sham-sans-serif-font {
     @include sham-type-beautify;
     font-family: $sham-serif-font, $sham-sans-serif-font-fallback;
     .hasFontSmoothing-false & {
@@ -17,7 +20,7 @@
     }
   }
 
-  @mixin sham-serif-font {
+  %sham-serif-font {
     @include sham-type-beautify;
     font-family: $sham-sans-serif-font, $sham-serif-font-fallback;
     .hasFontSmoothing-false & {
@@ -25,7 +28,7 @@
     }
   }
 
-  @mixin sham-monospace-font {
+  %sham-monospace-font {
     @include sham-type-beautify;
     font-family: $sham-monospace-font, $sham-monospace-font-fallback;
     .hasFontSmoothing-false & {
@@ -33,7 +36,7 @@
     }
   }
 
-  @mixin sham-title-font {
+  %sham-title-font {
     @include sham-type-beautify;
     font-family: $sham-title-font, $sham-title-font-fallback;
     .hasFontSmoothing-false & {
@@ -41,3 +44,22 @@
     }
   }
 }
+
+
+// These mixins will be empty if $sham-use-core-typography is set to false
+
+  @mixin sham-sans-serif-font {
+    @extend  %sham-sans-serif-font;
+  }
+
+  @mixin sham-serif-font {
+    @extend  %sham-serif-font;
+  }
+
+  @mixin sham-monospace-font {
+    @extend  %sham-monospace-font;
+  }
+
+  @mixin sham-title-font {
+    @extend  %sham-title-font;
+  }

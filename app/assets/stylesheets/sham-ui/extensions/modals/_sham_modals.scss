@@ -1,4 +1,4 @@
-@mixin sham-modal {
+@if $use_sham_modal == true {
   .sham-modal {
     background-color            : $sham-modal-background-color;
     @include position( absolute, 0px 0 0 0px );

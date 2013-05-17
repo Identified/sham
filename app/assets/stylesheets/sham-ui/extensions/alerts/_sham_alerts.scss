@@ -1,4 +1,4 @@
-@mixin sham-alert {
+@if $use_sham_alert == true {
   .sham-alert {
     @include position(relative);
     margin-left: auto;
