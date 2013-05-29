@@ -1,35 +1,35 @@
 @if $use_sham_modal == true {
   .sham-modal {
-    background-color            : $sham-modal-background-color;
     @include position( absolute, 0px 0 0 0px );
-    z-index                     : 10;
+    background-color : $sham-modal-background-color;
+    z-index          : 10;
     .sham-modal-content {
-      background         : $sham-modal-content-background-color;
-      border-color       : $sham-modal-content-border-color;
-      border-style       : solid;
-      border-width       : 4px;
-      color              : $sham-modal-color;
-      margin-top         : 0;
-      min-height         : 5em;
-      min-width          : 5em;
-      overflow           : auto;
       @include position( fixed, 0px 0 0 0);
-      padding            : 1.5em;
+      background   : $sham-modal-content-background-color;
+      border-color : $sham-modal-content-border-color;
+      border-style : solid;
+      border-width : 4px;
+      color        : $sham-modal-color;
+      margin-top   : 0;
+      min-height   : 5em;
+      min-width    : 5em;
+      overflow     : auto;
+      padding      : 1.5em;
     }
     .sham-modal-close-button{
-      padding-left  : 15px;
-      padding-top   : 4px;
       @include position( absolute, 6px 10px 0 0);
+      padding-left : 15px;
+      padding-top  : 4px;
       a {
-        background-size           : 14px;
-        cursor                    : pointer;
-        display                   : block;
-        height                    : 18px;
-        text-indent               : -10000px;
-        width                     : 18px;
+        background-size : 14px;
+        cursor          : pointer;
+        display         : block;
+        height          : 18px;
+        text-indent     : -10000px;
+        width           : 18px;
       }
       a:hover {
-        opacity: .9;
+        opacity : .9;
       }
     }
   }

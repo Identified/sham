@@ -1,0 +1,60 @@
+//This spinner requires a background-image, preferably an svg file, and spins the div with CSS3
+
+@if $use_sham_spin == 'true' {
+  .sham-spin {
+    position            : absolute;
+    // width               : 32px;
+    // height              : 32px;
+    // background-size     : 32px;
+    background-repeat   : no-repeat;
+    background-position : center center;
+
+    -moz-animation             : sham-spin infinite linear  ;
+    -moz-transform-origin      : 50% 50%;
+    -webkit-animation          : sham-spin infinite linear  ;
+    -webkit-transform-origin   : 50% 50%;
+    -o-animation               : sham-spin infinite linear  ;
+    -o-transform-origin        : 50% 50%;
+    animation                  : sham-spin infinite linear  ;
+    transform-origin           : 50% 50%;
+
+    animation-duration         :3s;
+    -webkit-animation-duration :3s;
+  }
+
+
+  @-moz-keyframes sham-spin {
+      0    { -moz-transform : rotate(0); }
+      100% { -moz-transform : rotate(360deg); }
+  }
+
+  @-webkit-keyframes sham-spin {
+      0%    { -webkit-transform : rotate(0); }
+      100% { -webkit-transform : rotate(360deg); }
+  }
+
+  @keyframes sham-spin {
+      0%    { transform : rotate(0); }
+      100% { transform : rotate(360deg); }
+  }
+
+  @-o-keyframes sham-spin {
+      0%    { -o-transform : rotate(0); }
+      100% { -o-transform : rotate(360deg); }
+  }
+}
+
+// This version is intended for animated GIFs
+
+@mixin sham-spinner ( $background-color: transparent, $background-image:null, $background-position: top center, $height: null, $width: null, $padding: null) {
+  background-color: $background-color;
+  background-image: $background-image;
+  background-position: $background-position;
+  background-repeat: no-repeat;
+  display: block;
+  @if $height != null { height: $height; };
+  @if $width != null { width: $width; };
+  padding: $padding;
+}
+
+

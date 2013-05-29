@@ -1,105 +1,91 @@
 // ---- Extensions ------------------------------------------------------------
 
-// Resets (choose one)
-$use_eric_meyer_reset   : false !default;
-$use_HTML5_doctor_reset : false !default;
-$use_normalize_reset    : false !default;
-
 // Alerts
-$use_sham_alert         : false !default;
-
-// Animation
-$use_animate_css        : false !default;
+$use_sham_alert                      : true !default;
 
 // Buttons
-$use_sham_button        : true !default;
+$use_sham_button                     : true !default;
 
 // Forms
-$use_sham_input         : true !default;
+$use_sham_input                      : true !default;
 
 // Menus
-$use_sham_menu          : true !default;
+$use_sham_menu                       : true !default;
 
 // Modals
-$use_sham_modal         : true !default;
+$use_sham_modal                      : true !default;
 
 // Popups
-$use_sham_popup         : true !default;
+$use_sham_popup                      : true !default;
 
 
 // Spinners
-$use_simple_spin        : true !default;
+$use_sham_spin                       : true !default;
 
 // Typography
-$sham-use-typeplate     : true !default;
-
+$use_sham_font_stacks                : true !default;
 
 
 // ---- Basics ----------------------------------------------------------------
 
-$base-em: 16px !default;
+$base-em                             : 16px !default;
 
 
 // ---- Colors ----------------------------------------------------------------
+$red                                 : red !default;
+$yellow                              : yellow !default;
+$green                               : green !default;
+$white                               : white !default;
 
-$red            : red !default;
-$yellow         : yellow !default;
-$green          : green !default;
-$blanchedalmond : blanchedalmond !default;
-$white          : white !default;
-
-$sham-base-text-color : #555 !default;
+$sham-base-text-color                : #555 !default;
 
 // ---- Button ----------------------------------------------------------------
-$sham-button-background-color : null !default;
-$sham-button-color            : null !default;
+$sham-button-background-color        : null !default;
+$sham-button-color                   : null !default;
 
 // --- Inputs -----------------------------------------------------------------
-$sham-input-text-border-color      : null !default;
-$sham-input-text-color             : null !default;
-$sham-input-text-font-size         : null !default;
-$sham-input-text-height            : null !default;
-$sham-input-text-padding           : null !default;
-$sham-input-text-placeholder-color : null !default;
-$sham-input-text-width             : null !default;
+$sham-input-text-border-color        : null !default;
+$sham-input-text-color               : null !default;
+$sham-input-text-font-size           : null !default;
+$sham-input-text-height              : null !default;
+$sham-input-text-padding             : null !default;
+$sham-input-text-placeholder-color   : null !default;
+$sham-input-text-width               : null !default;
 
 // ---- Menu ------------------------------------------------------------------
-$sham-menu-background-color  : null !default;
-$sham-menu-border-color      : null !default;
-$sham-menu-color             : null !default;
+$sham-menu-background-color          : null !default;
+$sham-menu-border-color              : null !default;
+$sham-menu-color                     : null !default;
 
 
 // ---- Modal -----------------------------------------------------------------
 
-$sham-modal-background-color            : null !default;
-$sham-modal-color                       : null !default;
-$sham-modal-content-background-color    : null !default;
-$sham-modal-content-border-color        : null !default;
+$sham-modal-background-color         : null !default;
+$sham-modal-color                    : null !default;
+$sham-modal-content-background-color : null !default;
+$sham-modal-content-border-color     : null !default;
 
 
 // ---- Popup -----------------------------------------------------------------
 
-$sham-popup-background-color  : null !default;
-$sham-popup-border-color      : null !default;
-$sham-popup-color             : null !default;
+$sham-popup-background-color         : null !default;
+$sham-popup-border-color             : null !default;
+$sham-popup-color                    : null !default;
 
 
 // ---- Typography ------------------------------------------------------------
 
-$sham-use-core-typography   : true !default;
-
-
-$sham-beautify-fonts  : true !default;
+$sham-use-sham-font-stacks           : true !default;
+$sham-beautify-fonts                 : true !default;
 
 // Override with custom fonts only, attributes belong in mixins
-$sham-serif-font      : unquote ('Georgia') !default;
-$sham-sans-serif-font : unquote ('"Lucida Grande"') !default;
-$sham-monospace-font  : unquote ('Consolas') !default;
-$sham-title-font      : unquote ('Rockwell') !default;
+$sham-serif-font                     : unquote ('Georgia') !default;
+$sham-sans-serif-font                : unquote ('"Lucida Grande"') !default;
+$sham-monospace-font                 : unquote ('Consolas') !default;
+$sham-title-font                     : unquote ('Rockwell') !default;
 
 
-
-$sham-serif-fallback      : unquote ('Georgia, Times, "Times New Roman", serif;')!default;
-$sham-sans-serif-fallback : unquote ('"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif') !default;
-$sham-monospace-fallback  : unquote('Consolas, monaco, "Lucida Console", monospace') !default;
-$sham-title-fallback      : unquote('Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;') !default;
+$sham-serif-fallback                 : unquote ('Georgia, Times, "Times New Roman", serif;')!default;
+$sham-sans-serif-fallback            : unquote ('"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif') !default;
+$sham-monospace-fallback             : unquote('Consolas, monaco, "Lucida Console", monospace') !default;
+$sham-title-fallback                 : unquote('Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;') !default;

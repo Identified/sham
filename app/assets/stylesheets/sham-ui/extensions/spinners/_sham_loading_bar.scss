@@ -1,0 +1,16 @@
+@mixin sham-loading-bar ($background-color:null, $foreground-color: null, $height: null, $width:null) {
+  &:before, &:after {
+    height: $height;
+    content: '';
+  }
+  &:before {
+    background-color: $background-color;
+    width: $width;
+  }
+  &:after {
+    background-color: $foreground-color;
+    height: $height;
+    @include prefixer( animation, progress 1.5s linear infinite, spec moz webkit ms o);
+  }
+}
+

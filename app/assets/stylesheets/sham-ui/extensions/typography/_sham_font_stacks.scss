@@ -5,9 +5,9 @@
   }
 }
 
-// Create placeholders for core typography
+// Create placeholders for sham typography
 
-@if $sham-use-core-typography == 'true' {
+@if $sham-use-sham-font-stacks == 'true' {
 
   /* Optionally include detect_cleartype or simlar script in your poject if you want to disable custom fonts on browsers/OS's that render them poorly.
   https://gist.github.com/cbeier/283689 */
@@ -46,7 +46,7 @@
 }
 
 
-// These mixins will be empty if $sham-use-core-typography is set to false
+// These mixins will be empty if $sham-use-sham-typography is set to false
 
   @mixin sham-sans-serif-font {
     @extend  %sham-sans-serif-font;
