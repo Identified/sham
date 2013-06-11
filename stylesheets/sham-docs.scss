@@ -24,9 +24,77 @@
 
 // Mixins and variables
 $header-color : #cc6666;
-$blue         : #569aaa;
-$green        : #a3b57b;
-$purple       : #70535c;
+
+$background-color: #f3f3ec;
+$sand: #E9E9E9;
+$grey: #898989;
+$maroon: #9F6163;
+$brown: #935C52;
+$muted-blue: #487081;
+$blue: #569AAA;
+$forest-green: #6A724F;
+$yellow: #D6C054;
+$dark-grey: #626A6D;
+$scrub-blue: #7DB1A9;
+$purple: #70535C;
+$green: #A3B57B;
+$red: #cc6666;
+
+.sham-background-color {
+  background-color: $background-color;
+}
+
+.sham-sand {
+  background-color: $sand;
+}
+
+.sham-grey {
+  background-color: $grey;
+}
+
+.sham-maroon {
+  background-color: $maroon;
+}
+
+.sham-brown {
+  background-color: $brown;
+}
+
+.sham-muted-blue {
+  background-color: $muted-blue;
+}
+
+.sham-blue {
+  background-color: $blue;
+}
+
+.sham-forest-green {
+  background-color: $forest-green;
+}
+
+.sham-yellow {
+  background-color: $yellow;
+}
+
+.sham-dark-grey {
+  background-color: $dark-grey;
+}
+.sham-scrub-blue {
+  background-color: $scrub-blue;
+}
+
+.sham-purple {
+  background-color: $purple;
+}
+
+.sham-green {
+  background-color: $green;
+}
+
+.sham-red {
+  background-color: $red;
+}
+
 
 
 @mixin id-logo($color) {
@@ -66,12 +134,12 @@ p {
 h1 {
   font           : 3.75em/1.25em 'SourceSansProSemibold', Arial, sans-serif;
   letter-spacing : 0;
+  text-shadow    : 2px 2px rgba(0, 0, 0, 0.40);
   a,a:link, a:active, a:visited {
     color           : white;
     text-decoration : none;
   }
 }
-
 pre {
   font             : 0.813em/1em 'SourceCodeProLight', Arial, sans-serif;
   background-color : #f3f3ec;
@@ -98,7 +166,9 @@ header {
   padding          : 120px 40px;
 
   p {
-  font : 1.2em/2em 'SourceSansProRegular', Arial, sans-serif;
+  font        : 1.2em/2em 'SourceSansProRegular', Arial, sans-serif;
+  text-shadow : 2px 2px rgba(0, 0, 0, 0.40);
+
   }
 }
 
