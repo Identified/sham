@@ -1,5 +1,15 @@
-body.sham {
+html {
+  opacity: 0;
+  visibility: hidden;
 
+  &.wf-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out;
+  }
+}
+
+body.sham {
   // Handy conversion to em/percent/px/pt
   // Let's use ems for everything
 
@@ -40,6 +50,8 @@ body.sham {
   }
 
   // Page styles
+
+
   *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

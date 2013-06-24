@@ -562,6 +562,14 @@ body.sham header a, .sham-spinner-circular-fading, .sham-spinner-spokes-fading, 
   100% {
     -o-transform: rotate(360deg); } }
 
+html {
+  opacity: 0;
+  visibility: hidden; }
+  html.wf-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out; }
+
 body.sham {
   color: #626a6d;
   font-size: 100%;
