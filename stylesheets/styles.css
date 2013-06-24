@@ -616,10 +616,6 @@ body.sham {
     font-family: "share-techmono", "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
     font-size: 90%;
     padding: 1em; }
-  body.sham .wrapper {
-    background-color: rgba(255, 255, 255, 0.77);
-    position: absolute;
-    top: 24em; }
   body.sham header {
     *zoom: 1; }
     body.sham header a {
@@ -712,7 +708,11 @@ body.sham {
       width: 600px; }
     body.sham header div:nth-of-type(2) {
       background-color: transparent;
-      margin-top: 0; } }
+      margin-top: 0; }
+    body.sham .wrapper {
+      background-color: rgba(255, 255, 255, 0.77);
+      position: absolute;
+      top: 24em; } }
 
 .sham-spinner-circular-fading {
   animation-duration: 2s;

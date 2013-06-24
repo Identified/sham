@@ -114,11 +114,6 @@ body.sham {
 
   // Layout
 
-  .wrapper {
-    background-color : rgba(255, 255, 255, 0.77);
-    position         : absolute;
-    top              : 24em;
-  }
 
   header {
     a {
@@ -238,6 +233,11 @@ body.sham {
         background-color : transparent;
         margin-top       : 0;
       }
+    }
+    .wrapper {
+      background-color : rgba(255, 255, 255, 0.77);
+      position         : absolute;
+      top              : 24em;
     }
   }
 }
