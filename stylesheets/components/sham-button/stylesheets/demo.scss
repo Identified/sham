@@ -1,0 +1,44 @@
+@import 'sham-button';
+
+
+
+.sham-button-bordered-rounded {
+	@include sham-button-bordered (#EF382E, #e6e6e6, white, 14px, 30px);
+}
+
+.sham-button-bordered {
+	@include sham-button-bordered (#A3B57B, #e6e6e6, white, 18px, 0);
+}
+
+.sham-button-flat {
+	@include sham-button-flat (#c66, #a3b57b, white, 13px, 0);
+	text-transform: uppercase;
+}
+
+.sham-button-flat-roomy {
+	@include sham-button-flat-roomy (#c66, #a3b57b, white, 13px, 0);
+	text-transform: uppercase;
+}
+
+.sham-button-flat-compact {
+	@include sham-button-flat-compact (#c66, #a3b57b, white, 13px, 0);
+	text-transform: uppercase;
+}
+
+.sham-button-three-d {
+	@include sham-button-three-d (#FC780A, white, 18px, 4px);
+}
+
+.sham-button-three-d-square {
+	@include sham-button-three-d (#CF504E, white, 14px, 2px);
+}
+
+
+.sham-button-gradient {
+	@include sham-button-gradient (#FDC20E, #ffa403, white, 16px, 2px);
+}
+
+.sham-button-gradient-grey {
+	@include sham-button-gradient (#f6f6f6, #d7d7d7, #555, 13px, 22px);
+	text-shadow: 1px 1px 0px #ffffff;
+}

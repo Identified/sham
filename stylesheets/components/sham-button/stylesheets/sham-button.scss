@@ -1,0 +1,201 @@
+@mixin sham-button-bordered ($color1, $color2, $text-color, $font-size, $radius) {
+
+	background-color      : $color1;
+	border-color          : lighten( $color1, 10% );
+	border-style          : solid;
+	border-width          : 1px;
+	cursor                : pointer;
+	display               : inline-block;
+	padding               : $font-size/1.8 $font-size *1.8;
+	text-shadow           : 1px 1px 1px darken( $color1, 20% );
+
+	-webkit-box-shadow    : 0px 2px 0px 0px lighten( $color1, 10% ) inset, 0px 0px 0px 4px $color2;
+	-moz-box-shadow       : 0px 2px 0px 0px lighten( $color1, 10% ) inset, 0px 0px 0px 4px $color2;
+	box-shadow            : 0px 2px 0px 0px lighten( $color1, 10% ) inset, 0px 0px 0px 4px $color2;
+
+	-moz-border-radius    : $radius;
+	-webkit-border-radius : $radius;
+	border-radius         : $radius;
+
+	color                 : $text-color;
+	font-size             : $font-size;
+	font-weight           : 600;
+
+	&:hover {
+		background-color   : lighten( $color1, 2% );
+		-webkit-box-shadow : 0px 0px 0px 4px darken( $color2, 8% );
+		-moz-box-shadow    : 0px 0px 0px 4px darken( $color2, 8% );
+		box-shadow         : 0px 0px 0px 4px darken( $color2, 8% );
+		text-shadow        : none;
+		border-color       : $color1;
+	}
+	&:active {
+		background-color   : darken( $color1, 30% );
+		text-shadow        : none;
+	}
+}
+
+@mixin sham-button-flat-compact ($color1, $color2, $text-color, $font-size, $radius) {
+
+	background-color      : $color1;
+	cursor                : pointer;
+	display               : inline-block;
+	padding               : $font-size/1.5 $font-size *2.2;
+	text-shadow           : 1px 1px 1px darken( $color1, 20% );
+
+	-moz-border-radius    : $radius;
+	-webkit-border-radius : $radius;
+	border-radius         : $radius;
+
+	color                 : $text-color;
+	font-size             : $font-size;
+	font-weight           : 600;
+
+	&:hover {
+		background-color   : $color2;
+		text-shadow        : none;
+	}
+	&:active {
+		background-color   : darken( $color1, 30% );
+		text-shadow        : none;
+	}
+}
+
+@mixin sham-button-flat ($color1, $color2, $text-color, $font-size, $radius) {
+
+	background-color      : $color1;
+	cursor                : pointer;
+	display               : inline-block;
+	padding               : $font-size/1 $font-size *2;
+	text-shadow           : 1px 1px 1px darken( $color1, 20% );
+
+	-moz-border-radius    : $radius;
+	-webkit-border-radius : $radius;
+	border-radius         : $radius;
+
+	color                 : $text-color;
+	font-size             : $font-size;
+	font-weight           : 600;
+
+	&:hover {
+		background-color   : $color2;
+		text-shadow        : none;
+	}
+	&:active {
+		background-color   : darken( $color1, 30% );
+		text-shadow        : none;
+	}
+}
+
+
+@mixin sham-button-flat-roomy ($color1, $color2, $text-color, $font-size, $radius) {
+
+	background-color      : $color1;
+	cursor                : pointer;
+	display               : inline-block;
+	padding               : $font-size/.75 $font-size *2.5;
+	text-shadow           : 1px 1px 1px darken( $color1, 20% );
+
+	-moz-border-radius    : $radius;
+	-webkit-border-radius : $radius;
+	border-radius         : $radius;
+
+	color                 : $text-color;
+	font-size             : $font-size;
+	font-weight           : 600;
+
+	&:hover {
+		background-color   : $color2;
+		text-shadow        : none;
+	}
+	&:active {
+		background-color   : darken( $color1, 30% );
+		text-shadow        : none;
+	}
+
+}
+
+
+@mixin sham-button-three-d ($color1, $text-color, $font-size, $radius) {
+
+	background            : $color1;
+	border                : solid 1px darken( $color1, 2% );
+	box-shadow            : 0px 5px 0px 0px darken( $color1, 10% ), 0px -1px 0px 0px lighten( $color1, 5% ) inset, 0px 5px 2px 0px darken( $color1, 30%) ;
+	color                 : $text-color;
+	cursor                : pointer;
+	display               : inline-block;
+	font-size             : $font-size;
+	font-weight           : bold;
+/* 	padding               : 10px 30px 10px 30px; */
+	padding               : $font-size/1.6 $font-size *2;
+
+	text-shadow           : 0px -1px 0px darken( $color1, 15%);
+	-webkit-border-radius : $radius;
+	-moz-border-radius    : $radius;
+	border-radius         : $radius;
+
+	&:hover {
+		background  : darken($color1, 2%);
+		border      : solid 1px darken( $color1, 2% );
+		box-shadow  : 0px 5px 0px 0px darken($color1, 10% ), 0px -1px 0px 0px lighten($color1, 5% ) inset, 0px 5px 2px 0px darken($color1, 30%) ;
+		text-shadow : none;
+	}
+
+	&:active {
+	-webkit-box-shadow : 0px 1px 0px 0px darken($color1, 30% ), 0px -1px 0px 0px $color1;
+	-moz-box-shadow    : 0px 1px 0px 0px darken($color1, 30% ), 0px -1px 0px 0px $color1;
+	box-shadow         : 0px 1px 0px 0px darken($color1, 30% ), 0px -1px 0px 0px $color1;
+	-webkit-transform  : translateY(3px);
+	-moz-transform     : translateY(3px);
+	transform          : translateY(3px);
+	}
+}
+
+
+
+@mixin sham-button-gradient ($color1, $color2,$text-color, $font-size, $radius) {
+	cursor: pointer;
+	display: inline-block;
+	/* 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc930), color-stop(100%,#ffa403));
+	*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2));
+	background: -moz-linear-gradient(center top, $color1 0%, $color2 100%);
+	background: -ms-linear-gradient(top, $color1, $color2);
+	background: -o-linear-gradient(top, $color1, $color2);
+	border-color : darken( $color2, 12%);
+	border-style : solid;
+	border-width : 1px;
+	color        : $text-color;
+	font-size    : $font-size;
+	font-weight   : 600;
+	padding      : $font-size/1.6 $font-size *1.6;
+	text-shadow  : 1px 1px 0px darken( $color2, 12%);
+
+	-webkit-box-shadow: 1px 0 1px lighten($color2, 5%), 0.5px 1px lighten($color1, 30% ) inset;
+	-moz-box-shadow: 1px 0 1px lighten($color2, 5%), 0.5px 1px lighten($color1, 30% ) inset;
+	box-shadow: 1px 0 1px lighten($color2, 5%), 0.5px 1px lighten($color1, 30% ) inset;
+
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+
+	&:hover {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten($color1, 10% )), color-stop(100%,lighten($color2, 5% )));
+		background: -moz-linear-gradient(center top, lighten($color1, 10% ) 0%, lighten($color2, 5% ) 100%);
+		background: -ms-linear-gradient(top, lighten($color1, 10% ), lighten($color2, 5% ));
+		background: -o-linear-gradient(top, lighten($color1, 10% ), lighten($color2, 5% ));
+
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	&:active {
+		-webkit-box-shadow: 1px 1px 1px 1px darken($color1, 5% ) inset;
+		-moz-box-shadow: 1px 1px 1px 1px darken($color1, 5% ) inset;
+		box-shadow: 1px 1px 1px 1px darken($color1, 5% ) inset;
+	}
+
+
+}
+

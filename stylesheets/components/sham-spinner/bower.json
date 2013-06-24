@@ -1,0 +1,20 @@
+{
+  "name": "sham-spinner",
+  "version": "0.0.0",
+  "main": "sham-spinner.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "gitHead": "6dd9a65f16cf0c78b86d16a55139f4c731a3e14d",
+  "readme": "sham-spinner\n===========\n\n###About\nMixins for scalable and customizable loading spinners that use inline SVG from your friends at Identified.com.\n\nThis means no images! They look great at any size, on any screen. Pass in $color, $size, and $speed variables for easy customization. Several commonly used styles are included: pinwheel, dots, circular, peacock, and the ubiquitous spokes.\n\nFeel free to add more with pull requests.\n\n###Usage\nSee http://identified.github.io/sham-spinner/ for all of the exciting details\n\n",
+  "readmeFilename": "README.md",
+  "_id": "sham-spinner@0.0.1",
+  "description": "sham-spinner ===========",
+  "commit": "6dd9a65f16cf0c78b86d16a55139f4c731a3e14d",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Identified/sham-spinner.git"
+  }
+}

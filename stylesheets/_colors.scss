@@ -1,0 +1,72 @@
+  // Mixins and variables
+  $header-color : #fff;
+
+  $background-color: #f3f3ec;
+  $sand: #E9E9E9;
+  $grey: #898989;
+  $maroon: #9F6163;
+  $brown: #935C52;
+  $muted-blue: #487081;
+  $blue: #569AAA;
+  $forest-green: #6A724F;
+  $yellow: #D6C054;
+  $dark-grey: #626A6D;
+  $scrub-blue: #7DB1A9;
+  $purple: #70535C;
+  $green: #A3B57B;
+  $red: #cc6666;
+
+  .sham-background-color {
+    background-color: $background-color;
+  }
+
+  .sham-sand {
+    background-color: $sand;
+  }
+
+  .sham-grey {
+    background-color: $grey;
+  }
+
+  .sham-maroon {
+    background-color: $maroon;
+  }
+
+  .sham-brown {
+    background-color: $brown;
+  }
+
+  .sham-muted-blue {
+    background-color: $muted-blue;
+  }
+
+  .sham-blue {
+    background-color: $blue;
+  }
+
+  .sham-forest-green {
+    background-color: $forest-green;
+  }
+
+  .sham-yellow {
+    background-color: $yellow;
+  }
+
+  .sham-dark-grey {
+    background-color: $dark-grey;
+  }
+  .sham-scrub-blue {
+    background-color: $scrub-blue;
+  }
+
+  .sham-purple {
+    background-color: $purple;
+  }
+
+  .sham-green {
+    background-color: $green;
+  }
+
+  .sham-red {
+    background-color: $red;
+  }

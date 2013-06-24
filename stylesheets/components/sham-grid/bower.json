@@ -1,0 +1,20 @@
+{
+  "name": "sham-grid",
+  "version": "0.0.0",
+  "main": "sham-grid.scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "gitHead": "80e17cd7f223c730328103686cc84f6c7e5a3d10",
+  "readme": "sham-grid\n===========\n\n###About\nSham-grid is a simpler way to get responsive and flexible versions of three most common layouts — a fat column with a sidebar, two equal columns, and three equal columns. You can use these patterns repeatedly to acheive anything you like.\n\n###Usage\nSee http://identified.github.io/sham-grid/ for all of the exciting details\n\n",
+  "readmeFilename": "README.md",
+  "_id": "sham-grid@0.0.2",
+  "description": "sham-grid ===========",
+  "commit": "80e17cd7f223c730328103686cc84f6c7e5a3d10",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Identified/sham-grid.git"
+  }
+}

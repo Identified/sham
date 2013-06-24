@@ -1,0 +1,243 @@
+body.sham {
+
+  // Handy conversion to em/percent/px/pt
+  // Let's use ems for everything
+
+  // PX     EM          Percent   PT
+  // 6px    0.375em     37.5%     5pt
+  // 7px    0.438em     43.8%     5pt
+  // 8px    0.500em     50.0%     6pt
+  // 9px    0.563em     56.3%     7pt
+  // 10px   0.625em     62.5%     8pt
+  // 11px   0.688em     68.8%     8pt
+  // 12px   0.750em     75.0%     9pt
+  // 13px   0.813em     81.3%     10pt
+  // 14px   0.875em     87.5%     11pt
+  // 15px   0.938em     93.8%     11pt
+  // 16px   1.000em     100.0%    12pt
+  // 17px   1.063em     106.3%    13pt
+  // 18px   1.125em     112.5%    14pt
+  // 19px   1.188em     118.8%    14pt
+  // 20px   1.250em     125.0%    15pt
+  // 21px   1.313em     131.3%    16pt
+  // 22px   1.375em     137.5%    17pt
+  // 23px   1.438em     143.8%    17pt
+  // 24px   1.500em     150.0%    18pt
+
+  color: $dark-grey;
+  font-size:  100%;
+  font-family: "pragmatica-web", $helvetica;
+
+  @mixin sham-logo($size) {
+    @extend %spinner-properties;
+    animation-duration         :99s;
+    -webkit-animation-duration :99s;
+    background-image: url('data:image/svg+xml;utf8, <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="%23{$size}" height="%23{$size}" viewBox="-527.917 -90.454 312.2 312.208" enable-background="new -527.917 -90.454 312.2 312.208" xml:space="preserve"><path opacity="0.7" fill="%23CC6666" d="M-343.252-10.886c0,43.954-28.569,79.582-28.569,79.582s-28.568-35.628-28.568-79.582 c0-43.941,28.568-79.568,28.568-79.568S-343.252-54.827-343.252-10.886z"/><path opacity="0.7" fill="%2370535C" d="M-405.739-8.668c31.078,31.078,36.082,76.475,36.082,76.475s-45.382-5.004-76.46-36.082 c-31.077-31.078-36.081-76.46-36.081-76.46S-436.804-39.732-405.739-8.668z"/><path opacity="0.7" fill="%23A2C98F" d="M-448.348,37.08c43.954,0,79.583,28.569,79.583,28.569s-35.629,28.568-79.583,28.568 c-43.94,0-79.568-28.568-79.568-28.568S-492.302,37.08-448.348,37.08z"/><path opacity="0.7" fill="%23D6C054" d="M-446.124,99.565c31.077-31.078,76.459-36.068,76.459-36.068s-5.004,45.382-36.081,76.46 c-31.064,31.078-76.46,36.068-76.46,36.068S-477.202,130.643-446.124,99.565z"/><path opacity="0.7" fill="%2354ACD3" d="M-400.382,142.186c0-43.955,28.569-79.583,28.569-79.583s28.569,35.628,28.569,79.583 c0,43.939-28.569,79.568-28.569,79.568S-400.382,186.125-400.382,142.186z"/><path opacity="0.7" fill="%23487081" d="M-337.895,139.965c-31.079-31.076-36.083-76.471-36.083-76.471s45.397,5.004,76.474,36.082 c31.077,31.077,36.069,76.459,36.069,76.459S-306.818,171.045-337.895,139.965z"/><path opacity="0.7" fill="%239F6163" d="M-295.287,94.215c-43.953,0-79.58-28.568-79.58-28.568s35.613-28.556,79.58-28.556 c43.941,0,79.57,28.556,79.57,28.556S-251.332,94.215-295.287,94.215z"/><path opacity="0.7" fill="%23A3B57B" d="M-297.504,31.735c-31.076,31.077-76.474,36.068-76.474,36.068s5.004-45.383,36.083-76.461 c31.076-31.077,76.46-36.067,76.46-36.067S-266.427,0.657-297.504,31.735z"/></svg>');
+
+    }
+  @mixin id-logo {
+    background-image: url("data:image/svg+xml;utf8, <svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='161.417px' height='34.697px' viewBox='0 0 161.417 34.697' enable-background='new 0 0 161.417 34.697' xml:space='preserve'><g><g><path fill='%23898989' d='M32.261,24.734c0-3.086-1.234-5.992-4.684-5.992c-2.725,0.072-4.395,2.396-4.395,6.137 c0,3.668,1.815,6.285,4.395,6.285c1.162,0,2.288-0.438,3.123-1.273C31.825,28.766,32.261,27.35,32.261,24.734'/><path fill='%23898989' d='M32.261,31.783c-0.976,1.459-2.096,2.357-3.219,2.852h3.219V31.783z'/><path fill='%23898989' d='M7.312,30.473h2.07v-17.25H7.348V9.047h9.224v4.176H14.61v17.25h1.998v4.162h7.311 c-3.485-1.24-5.639-4.795-5.639-9.717c0-5.957,3.486-10.279,8.279-10.279c2.361,0,3.994,0.727,5.701,2.723v-5.738h-1.814V7.848 h6.56V0H0v34.635h7.312V30.473z'/></g><g><path fill='%23898989' d='M55.134,27.867c-0.84,4.053-4.229,6.568-8.772,6.568c-5.242,0-9.087-4.088-9.087-9.82c0-5.66,3.88-9.854,9.121-9.854c2.971,0,5.592,1.396,7.199,3.809c1.713,2.619,1.783,5.102,1.854,6.988h-13.49 c0.455,4.857,3.635,5.104,4.509,5.104c1.852,0,3.075-0.873,3.81-2.795H55.134z M50.345,22.346 c-0.314-2.377-1.747-3.672-3.949-3.672c-2.025,0-3.599,1.363-4.193,3.672H50.345z'/><path fill='%23898989' d='M74.741,30.818h1.712v3.633h-6.29v-12.51c0-1.746-1.014-2.797-2.76-2.797 c-2.238,0-4.195,2.236-4.195,4.754v6.92h1.713v3.633h-8.037v-3.633h1.746V19.391h-1.746v-3.635h6.324v2.375 c0.979-1.047,2.691-2.863,5.731-2.863c3.32,0,5.802,2.375,5.802,5.592V30.818z'/><path fill='%23898989' d='M79.565,9.781h4.543v5.975h3.67v3.635h-3.67v9.645c0,1.328,0.699,1.957,2.201,1.957h1.469v3.459 c-1.084,0.176-2.027,0.246-2.832,0.246c-1.92,0-5.416,0-5.416-3.635V19.391h-2.307v-3.635h2.342V9.781z'/><path fill='%23898989' d='M90.575,15.727h6.359v15.062h1.573v3.635h-8.003v-3.635h1.853V19.361h-1.782V15.727z M91.938,8.703h5.032 v4.402h-5.032V8.703z'/><path fill='%23898989' d='M102.911,12.406c0-2.201,0.525-3.912,5.104-3.912c1.188,0,2.061,0.068,3.004,0.209v3.635 c-0.209,0.035-1.223-0.07-1.467-0.07c-2.133,0-2.133,1.117-2.096,3.459h11.637v15.062h1.781v3.635h-8.143v-3.635h1.782V19.361 h-7.024v11.428h1.852v3.635h-8.246v-3.635h1.816V19.361h-2.551v-3.635h2.551V12.406z M113.956,8.703h5.137v4.369h-5.137V8.703z'/><path fill='%23898989' d='M139.503,27.838c-0.839,4.053-4.229,6.568-8.771,6.568c-5.242,0-9.086-4.088-9.086-9.818 c0-5.662,3.879-9.855,9.12-9.855c2.972,0,5.593,1.398,7.2,3.809c1.712,2.621,1.781,5.102,1.852,6.99h-13.489 c0.454,4.857,3.635,5.102,4.509,5.102c1.852,0,3.074-0.873,3.809-2.795H139.503z M134.715,22.316 c-0.313-2.377-1.747-3.67-3.949-3.67c-2.025,0-3.599,1.363-4.192,3.67H134.715z'/><path fill='%23898989' d='M153.379,8.186h6.325v22.617h1.713v3.633h-6.291v-2.557c-1.783,1.711-3.529,2.551-5.242,2.551 c-4.963,0-8.213-3.879-8.213-9.82c0-5.73,3.355-9.891,7.968-9.891c2.272,0,3.845,0.699,5.487,2.621v-5.521h-1.747V8.186z M146.39,24.574c0,3.529,1.746,6.047,4.228,6.047c1.119,0,2.202-0.42,3.005-1.225c1.084-1.082,1.504-2.447,1.504-4.961 c0-2.971-1.188-5.768-4.509-5.768C147.996,18.738,146.39,20.975,146.39,24.574'/></g></g></svg>");
+  }
+
+  // Page styles
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color       : $blue;
+    font-family : "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight : 200;
+  }
+
+  h1 {
+    color     : $purple;
+    font-size : 350%;
+  }
+
+  h2 {
+    color : $green;
+    font-size: 200%;
+    cursor: pointer;
+    &.toggle {
+       ~div {
+          max-height : 0;
+          opacity    : 0;
+          overflow   : hidden;
+          transition : opacity .5s ease-in-out;
+        }
+
+      &.on {
+        ~div {
+          max-height: 1000em;
+          opacity: 1;
+          overflow: hidden;
+          transition: opacity 1s ease-in-out;
+        }
+      }
+    }
+  }
+
+  h3 {
+    color     : $purple;
+    font-size : 150%;
+  }
+
+  hr {
+    @include clearfix;
+    border : none;
+    width  : 100%;
+  }
+
+  a, a:link {
+    color : $blue;
+
+    &:visited {
+      color : $purple;
+    }
+    &:active {
+      color : $green;
+    }
+  }
+
+  pre {
+    background-color : lighten( $blue, 45% );
+    font-family      : "share-techmono",$monospace;
+    font-size        : 90%;
+    padding          : 1em;
+  }
+
+
+  // Layout
+
+  .wrapper {
+    background-color : rgba(255, 255, 255, 0.77);
+    position         : absolute;
+    top              : 24em;
+  }
+
+  header {
+    a {
+      @include hide-text;
+      @include sham-logo(600px);
+      background-size : contain;
+      display         : block;
+      position        : relative;
+    }
+      @include clearfix;
+  }
+
+  section {
+    @include clearfix;
+    padding : 1.5em;
+  }
+
+  footer {
+    @include clearfix;
+    border-top  : 1px solid lighten($grey, 40%);
+    font-size   : 87.5%;
+    line-height : 4em;
+    margin-top  : 2em;
+    padding     : 4em;
+
+    #id-logo {
+      @include id-logo;
+      background-size : 10em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display         : block;
+      float           : right;
+      height          : 4em;
+      margin-top      : 0;
+      width           : 10em;
+
+      @media (max-width: 30em) {
+        float : none;
+      }
+    }
+  }
+
+  p {
+    & + p {
+      //disable typeplate sibling indentation
+      text-indent : 0;
+      margin-top  : 1.5em;
+    }
+  }
+
+  .sham-grid-third {
+    @extend %sham-third;
+    .inner {
+      padding : 1.5em;
+    }
+  }
+
+  .sham-grid-half {
+    @extend %sham-half;
+    .inner {
+      padding : 1.5em;
+    }
+  }
+
+
+
+// media adjustments
+  @media (min-width : 20em) {
+    header {
+      a {
+        background-position : center;
+        height              : 360px;
+        left                : 0;
+        top                 : 0;
+        width               : 100%;
+      }
+      div:nth-of-type(2) {
+        background-color : rgba(255, 255, 255, 0.77);
+        margin-top       : -150px;
+        position         : relative;
+        z-index          : 9999;
+      }
+      div div {
+        padding: 2em;
+      }
+    }
+  }
+
+  @media (min-width : 40em) {
+    header {
+      a {
+        background-position : center;
+        height              : 450px;
+        left                : 0;
+        top                 : 0;
+        width               : 100%;
+      }
+      div:nth-of-type(2) {
+        background-color : rgba(255, 255, 255, 0.77);
+        margin-top       : -150px;
+        position         : relative;
+        z-index          : 9999;
+      }
+    }
+  }
+
+  @media (min-width : 60em) {
+    header {
+      a {
+        background-position : center;
+        height              : 600px;
+        left                : -100px;
+        top                 : -100px;
+        width               : 600px;
+      }
+      div:nth-of-type(2) {
+        background-color : transparent;
+        margin-top       : 0;
+      }
+    }
+  }
+}

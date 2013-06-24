@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>@sham-button by Identified</title>
+    <link rel="stylesheet" href="http://identified.github.io/sham/stylesheets/sham-docs.css">
+    <link rel="stylesheet" href="stylesheets/demo.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="grid sham-muted-blue">
+        <div class="grid-half">
+          <h1><a href="https://github.com/Identified/sham-button">@sham-button</a></h1>
+        </div>
+        <div class="grid-half">
+          <p>Some basic button mixins to get you started.</p>
+          <p>These button mixins are designed to be very flexible. They take five variables $color1, $color2, $text-color, $font-size, and $radius. In some cases the colors are used for hover states and in others as parts of a gradient. Colors are darkened and lightened as needed for hover and active states. A little math is used on the $font-size variable to set an appropriate amount of padding. Add to the these by adding or changing styles to your button classes.</p>
+        </div>
+      </header>
+      <section class="grid">
+        <div class="grid-third">
+          <h3>3D examples</h3>
+          <p>$color2 isn't needed for this button:</p>
+          <div class="sham-button-three-d">
+            Dimensions!
+          </div>
+          <pre>@include sham-button-three-d (#FC780A, white, 18px, 4px);</pre>
+          <div class="sham-button-three-d-square">
+            Awesome
+          </div>
+          <pre>@include sham-button-three-d (#FC780A, white, 18px, 4px);</pre>
+          <h3>Bordered examples</h3>
+          <div class="sham-button-bordered-rounded">
+            Testing
+          </div>
+          <pre>@include sham-button-bordered (#EF382E, #e6e6e6, white, 14px, 30px);</pre>
+          <div class="sham-button-bordered">
+            Testing
+          </div>
+          <pre>@include sham-button-bordered (#A3B57B, #e6e6e6, white, 18px, 0);</pre>
+        </div>
+
+        <div class="grid-third">
+          <h3>Flat examples</h3>
+          <p>$color2 is used for the hover.</p>
+          <div class="sham-button-flat">
+            Flat
+          </div>
+          <pre>@include sham-button-flat (#c66, #a3b57b, white, 13px, 0); text-transform: uppercase;</pre>
+
+          <div class="sham-button-flat-compact">
+            Flat and compact
+          </div>
+          <pre>@include sham-button-flat-compact (#c66, #a3b57b, white, 13px, 0);text-transform: uppercase;</pre>
+
+          <p>This version has a little more breathing room. Feel free to override with padding:</p>
+          <div class="sham-button-flat-roomy">
+            Flat and roomy
+          </div>
+          <pre>@include sham-button-flat-roomy (#c66, #a3b57b, white, 13px, 0); text-transform: uppercase;</pre>
+
+
+
+          <h3>Gradient examples</h3>
+          <p>$color1 is the starting color and $color2 is the end color:</p>
+          <div class="sham-button-gradient">
+            Gradient
+          </div>
+          <pre>@include sham-button-gradient (#FDC20E, #ffa403, white, 16px, 2px);</pre>
+
+          <p>Since we have dark text, we need to override text-shadow:</p>
+          <div class="sham-button-gradient-grey">
+            Another gradient
+          </div>
+          <pre>@include sham-button-gradient (#f6f6f6, #d7d7d7, #555, 13px, 22px);text-shadow: 1px 1px 0px #ffffff;</pre>
+        </div>
+
+        <div class="grid-third">
+          <h3>Installation</h3>
+          <p>Naturally, you'll need <a href="http://sass-lang.com">Sass</a> to use these mixins.</p>
+          <p>To install using <a href="http://bower.io">Bower</a>:</p>
+          <pre>bower install sham-button</pre>
+          <p>Or include <a href="https://github.com/Identified/sham-button">the main .scss file</a> in your project</p>
+          <pre>@import 'sham-button';</pre>
+
+          <h3>Usage</h3>
+          <p>Include something like this in your markup:</p>
+          <pre>&lt;div class="my-fancy-button">Testing&lt;/div>
+          </pre>
+          <p>Style it with something like this:</p>
+          <pre>.my-fancy-button {@include sham-button-bordered (#EF382E, #e6e6e6, white, 14px, 30px);}
+          </pre>
+        </div>
+      </section>
+      <footer class="grid">
+        <div class="grid-half">
+          <h3>About Sham</h3>
+          <p class="copyright">We here at <a href="https://identified.com">Identified</a> use automative-themed names for our repos. "sham" – derived from chamois, a cloth comonly used to polish cars — is our all-purpose toolbox containing SASS mixins and variables to help us quickly build web apps.</p>
+        </div>
+        <div class="grid-half">
+          <p id="id-logo"></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+

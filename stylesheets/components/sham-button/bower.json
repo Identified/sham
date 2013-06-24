@@ -1,0 +1,9 @@
+{
+  "name": "sham-button",
+  "version": "0.0.0",
+  "commit": "685ff661203704ce4f639abea37a0b7f89eeb33b",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Identified/sham-button.git"
+  }
+}
