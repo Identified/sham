@@ -1,12 +1,4 @@
 html {
-  opacity: 0;
-  visibility: hidden;
-
-  &.wf-active {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 2s ease-in-out;
-  }
 }
 
 body.sham {
@@ -36,7 +28,8 @@ body.sham {
 
   color: $dark-grey;
   font-size:  100%;
-  font-family: "pragmatica-web", $helvetica;
+  font-family: $helvetica;
+  line-height: 150%;
 
   @mixin sham-logo($size) {
     @extend %spinner-properties;

@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="jquery.js"></script>
     <script src="main.js"></script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script type="text/javascript">
-      (function() {
-        var config = {
-          kitId: 'wew3okr',
-          scriptTimeout: 3000
-        };
-        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-      })();
-    </script>
   </head>
 
   <body class="sham">
@@ -34,7 +22,7 @@
       <div class="sham-grid-half">
         <div class="inner">
           <h1>sham</h1>
-          <p>Three easy-to-use pure CSS helpers for rapid app development.</p>
+          <p>Lightweight, easy-to-use, CSS-centric helpers for rapid app development.</p>
         </div>
       </div>
     </header>
@@ -101,6 +89,67 @@
         <pre>@include sham-spinner-NAME($color, $size, $speed);</pre>
       </div>
     </section>
+
+<!-- Popups demos -->
+    <section>
+      <h2 class="toggle">Popups</h2>
+      <div class="sham-grid-half" style="overflow: visible;">
+        <div class="popup-wrapper">
+          <div class="fox">
+            This is a red popup, appearing on the bottom.
+          </div>
+        </div>
+
+        <div class="popup-wrapper">
+          <div class="qux">
+            This is a blue popup, appearing on the right.
+          </div>
+        </div>
+
+        <div></div>
+
+        <div class="popup-wrapper">
+          <div class="bax">
+            This is a yellow (default) popup, appearing on the top.
+          </div>
+        </div>
+
+
+        <div class="popup-wrapper">
+          <div class="baz">
+            This is a black popup, appearing on the left.
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sham-grid-half">
+        <h3>Installation</h3>
+        <p>Naturally, you'll need <a href="http://sass-lang.com">SASS</a> to use these mixins. We use the .SCSS variant, which can be @imported into any SASS/SCSS file.</p>
+        <p>To install using <a href="http://bower.io">Bower</a>:</p>
+        <pre>bower install sham-popup</pre>
+        <p>Or include <a href="https://github.com/Identified/sham-popup">sham-popup.scss</a> in your project</p>
+        <pre>@import 'sham-popup';</pre>
+
+        <h3>Usage</h3>
+        <p>Include something like this in your markup:</p>
+        <pre>&lsaquo;div class="any-container"&rsaquo;  &lsaquo;div class="foo"&rsaquo;&lsaquo;/div&rsaquo;&lsaquo;/div&rsaquo;</pre>
+
+        <p>Style it with something like this:</p>
+        <pre>.my-container:hover .my-popup { display:block; }
+            .foo { @include popout-bottom('FILL-COLOR', 'BORDER-COLOR','MIN-WIDTH','MAX-WIDTH' ); }
+        </pre>
+
+        <h3>Tips</h3>
+        <p>Top, Bottom, Left, and Right are avaiable.</p>
+        <p>Width parameters are optional.</p>
+        <p>Use javascript or media queries to move them around more dynamically.</p>
+        <p>Or simple simple CSS :hover/:active psuedo classes to show them.</p>
+        </div>
+
+    </section>
+
 
 <!-- Buttons -->
     <section>

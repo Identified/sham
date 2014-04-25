@@ -1,0 +1,27 @@
+{
+  "name": "sham-popup",
+  "homepage": "https://github.com/Identified/sham-popup",
+  "authors": [
+    "Dennis Best <dennis.best@me.com>"
+  ],
+  "description": "Mixins for simple (bordered!) popups.",
+  "main": "popup.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "b8cdaf6e1c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b8cdaf6e1cdd44579b8fb94c14ad968a34e0f177"
+  },
+  "_source": "git://github.com/Identified/sham-popup.git",
+  "_target": "*",
+  "_originalSource": "sham-popup",
+  "_direct": true
+}

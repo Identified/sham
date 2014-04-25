@@ -176,4 +176,47 @@
   }
 }
 
+// Popup demo
+
+
+.popup-wrapper {
+  height: 300px;
+  width: 300px;
+  background-color: #e1e1e1;
+  position: relative;
+  float: right;
+  margin: 1em;
+  clear: both;
+
+
+  &:hover {
+    .fox, .bax, .baz, .qux {
+      display: block;
+    }
+  }
+}
+
+.fox {
+  @include popup-bottom('#ffcec1', '#ff6466', '300px');
+  display: none;
+}
+
+.bax {
+  @include popup-top('#fffbdd', '#eeee7e', '300px');
+  display: none;
+}
+
+.baz {
+  @include popup-left('black', 'transparent', '300px');
+  display: none;
+  color: white;
+}
+
+.qux {
+  @include popup-right('#d0eaff', '#5b83ff', '300px');
+  display: none;
+}
+
+
+
 
