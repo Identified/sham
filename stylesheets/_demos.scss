@@ -184,7 +184,6 @@
   width: 300px;
   background-color: #e1e1e1;
   position: relative;
-  float: right;
   margin: 1em;
   clear: both;
 
@@ -213,10 +212,50 @@
 }
 
 .qux {
-  @include popup-right('#d0eaff', '#5b83ff', '300px');
+  @include popup-left('#d0eaff', '#5b83ff', '300px');
   display: none;
 }
 
 
+// Modal demo
+
+.my-modal {
+  color: #a3b57b;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+.my-modal:active {
+
+  background-color  : rgba(0, 0, 0, 0.66);
+  display           : block;
+  display           : block;
+  height            : 100%;
+  left              : 50%;
+  position          : fixed;
+  position          : fixed;
+  top               : 50%;
+  -webkit-transform : translate(-50%, -50%);
+  transform         : translate(-50%, -50%);
+  width             : 100%;
+  color: black;
+  font-weight: normal;
+  font-size: 1em;
+
+  .inner {
+    background-color  : white;
+    border            : rgba(0, 0, 0, 0.5) 1px solid;
+    border-radius     : 8px;
+    box-shadow        : 3px 3px 3px rgba(0, 0, 0, 0.25);
+    display           : block;
+    left              : 50%;
+    padding           : 3em 5em !important;
+    position          : fixed;
+    top               : 50%;
+    -webkit-transform : translate(-50%, -50%);
+    transform         : translate(-50%, -50%);
+    z-index           : 999;
+  }
+}
 
 

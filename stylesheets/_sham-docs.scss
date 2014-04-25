@@ -80,7 +80,7 @@ body.sham {
         ~div {
           max-height: 1000em;
           opacity: 1;
-          overflow: hidden;
+          overflow: visible;
           transition: opacity 1s ease-in-out;
         }
       }
