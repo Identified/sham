@@ -93,7 +93,7 @@
 <!-- Popups demos -->
     <section>
       <h2 class="toggle">Popups</h2>
-      <div class="sham-grid-half" style="overflow: visible;">
+      <div class="sham-grid-half">
         <div class="popup-wrapper">
           <div class="fox">
             This is a red popup, appearing on the bottom.
@@ -117,7 +117,7 @@
 
         <div class="popup-wrapper">
           <div class="baz">
-            This is a black popup, appearing on the left.
+            This is a black popup, appearing on the right.
           </div>
         </div>
       </div>
@@ -323,6 +323,78 @@
             <pre>div.main {@extend %sham-main;}</pre>
       </div>
     </section>
+
+
+
+
+<!-- Modal -->
+
+<section>
+  <h2 class="toggle">Modals</h2>
+
+  <hr/>
+  <div class="sham-single-panel">
+    <h3>About</h3>
+    <p>A stupidly simple way to do a modal. This works in mordern browsers. (IE9 and below are <em>not</em> modern.)</p>
+    <p>Add the following to your CSS:</p>
+    <pre>
+      
+      .my-modal {
+          &:empty {
+            display: none;
+          }
+          background-color  : rgba(0, 0, 0, 0.5);
+          display           : block;
+          display           : block;
+          height            : 100%;
+          left              : 50%;
+          position          : fixed;
+          position          : fixed;
+          top               : 50%;
+          -webkit-transform : translate(-50%, -50%);
+          transform         : translate(-50%, -50%);
+          width             : 100%;
+          
+          .inner {
+            background-color  : white;
+            border            : rgba(0, 0, 0, 0.8) 1px solid;
+            border-radius     : 8px;
+            box-shadow        : 3px 3px 3px rgba(0, 0, 0, 0.5);
+            display           : block;
+            left              : 50%;
+            padding           : 3em;
+            position          : fixed;
+            top               : 50%;
+            -webkit-transform : translate(-50%, -50%);
+            transform         : translate(-50%, -50%);
+            z-index           : 999;
+          }
+      }
+      </pre>
+      <p>Add the following to your HTML:</p>
+      <pre>
+        &lsaquo;div class="my-modal"&rsaquo;
+        &lsaquo;div class="inner"&rsaquo;
+        &lsaquo;/div&rsaquo;&lsaquo;/div&rsaquo;
+      </pre>
+      
+    <p>When the modal div is empty, it's hidden. When there's something in it, it's a modal. Eezy peezy.</p>
+    
+    <p>
+      Use javascript to fill or empty it. 
+    <p>
+    <p>
+      Or skip the whole :empty busines and use other states to show and hide it. (The demo below uses the :active psuedo class.)
+    <p>
+    <p>
+      <div class="my-modal">
+        <div class="inner">
+          Click and hold for a demo.
+        </div>
+      </div>
+    <p>
+    </div>
+</section>
 
 <!-- Footer -->
 
